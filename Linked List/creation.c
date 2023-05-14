@@ -1,3 +1,11 @@
+struct Node
+{
+  int data;
+  struct Node *next;
+} *first;
+
+
+
 void
 create (int A[], int n)
 {
