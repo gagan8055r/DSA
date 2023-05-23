@@ -23,7 +23,7 @@ int main()
     }
   if(count==26)
   {
-      cout<<"ANAGRAM";
+      cout<<"THIS IS ANAGRAM";
   }
   else
   {
