@@ -9,7 +9,7 @@ do{
     p=p->next;
     
     q=q->next;
-    q=q!=NULL?q->next:NULL;
+    q=q!=NULL?q->next:NULL;                   ////LOOP CHECK
     
 }while(p && q &&p!=q);
     
