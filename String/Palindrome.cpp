@@ -28,7 +28,7 @@ int main()
           break;
       }
   }
-  cout<<"PALINDROME";
+  cout<<" THE GIVEN STRING IS PALINDROME";
   
 }
 
