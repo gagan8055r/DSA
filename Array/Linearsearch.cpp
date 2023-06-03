@@ -12,6 +12,6 @@ int Linear(Array &arr,int key)
         }
         
             
-   return -1;
-        
+
+     cout<<"Not linear search";   
 }
