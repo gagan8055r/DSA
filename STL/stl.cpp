@@ -1,9 +1,11 @@
+
 #include <iostream>
 #include<queue> 
 #include<set>
 #include<map>
 #include<vector>
 #include<algorithm>
+#include<bitset>
 using namespace std;
 
 int main()
@@ -97,6 +99,29 @@ int main()
     
     // m.erase(34);
     //  for(auto i :m)               ///for int in belongs to m  this is read as;;;
+    // {
+    //   cout<<i.first<<endl;
+    //   cout<<i.second<<endl;
+    // }
+    
+    // m.insert({5,"bheem"});
+    // // for(auto i :m)               ///for int in belongs to m  this is read as;;;
+    // // {
+    // //   cout<<i.first<<endl;
+    // //   cout<<i.second<<endl;
+    // // }
+    
+    
+    // auto itr=m.find(5);
+    
+    // for(auto it=itr;it!=m.end();it++)
+    // {
+    //     cout<<(*it).first<<endl;
+    // }
+    
+    
+//     vector<int> v;
+    
     
 // //   v.push_back(13);
 //      v.push_back(5);
@@ -110,5 +135,43 @@ int main()
 //     }
     
 //     cout<<binary_search(v.begin(),v.end(),70)<<endl;
+//         cout<<*lower_bound(v.begin(),v.end(),5)<<endl;
+
+
+// int a=10,b=34;
+// vector <int> v={1,3,4,5,6};
+// cout<<max(a,b);
+// cout<<min(a,b);
+// swap(a,b);
+
+// cout<<a;
+// cout<<b;
+
+// string name="gagan";
+
+// reverse(name.begin(),name.end());           reverse will have two parametrs from starting to end
+// cout<<name;
+
+// rotate(v.begin(),v.begin()+3,v.end());         ////rotate algo  it has three parametrs  at first start pos,second the new first element  and third is the ending pos        
+// sort(v.begin(),v.end());
+// for(auto i:v)
+// {
+//     cout<<i<<endl;
+// }
+
+
+bitset <5> bt;
+cin>>bt;
+
+
+cout<<bt.all()<<endl;
+cout<<bt.count()<<endl;
+
+    return 0;
+}
+
+
+   ///////////sort in stl will have introsort combination of quick sort,heap sort,insertion sort//////
+
 
 
