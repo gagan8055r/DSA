@@ -1,5 +1,5 @@
 
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -107,6 +107,56 @@ int fibo(int n)
     
     return fibo(n-1)+fibo(n-2);
 }
+
+void subsequence(int arr[],vector<int> &dp,int n,int ind)
+{
+    if(ind==n)
+    {
+        for(auto it:dp)
+        {
+            cout<<it<<" ";
+        }
+    if(dp.size()==0)
+    {
+        cout<<"{}";
+    }
+        cout<<endl;
+        return;
+    }
+    
+dp.push_back(arr[ind]);
+subsequence(arr,dp,n,ind+1);
+dp.pop_back();
+subsequence(arr,dp,n,ind+1);
+    
+    
+}
+
+
+void subsum(int arr[],vector<int> &dr,int n,int sum,int index,int k)
+{
+    
+    if(index==n)
+    {
+        if(sum==k)
+        {
+            for(auto it:dr)
+            {
+                cout<<it<<" ";
+            }
+            cout<<endl;
+        }
+            return;
+    }
+    
+    dr.push_back(arr[index]);
+    subsum(arr,dr,n,sum+arr[index],index+1,k);
+    dr.pop_back();
+    subsum(arr,dr,n,sum,index+1,k);
+    
+    
+    
+}
 int main()
 {
     
@@ -157,11 +207,33 @@ int main()
 //     second=next;
 // }
 
-int n=0;
-cin>>n;
-int res=fibo(n);
-cout<<res<<endl;
+// int n=0;
+// cin>>n;
+// int res=fibo(n);
+// cout<<res<<endl;
+
+
+
+    int arr[]={1,4,5,3,5,6,10};
+    int n=7;
+    int sum=0;
+    int key=10;
+    // vector<int> dp;
+    vector<int> dr;
+    // subsequence(arr,dp,n,0);
+    
+    subsum(arr,dr,n,sum,0,key);
+    
+    
+    
+    
+    
+    
+    return 0;
 }
+
+
+
 
 
 
